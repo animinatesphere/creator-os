@@ -34,6 +34,17 @@ export const metadata: Metadata = {
     title: "CreatorOS — All-in-One Creator Platform",
     description: "Build, design, and grow — all in one place.",
     type: "website",
+    images: ["/preview.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CreatorOS — All-in-One Creator Platform",
+    description: "Build, design, and grow — all in one place.",
+    images: ["/preview.png"],
+  },
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
   },
 };
 
