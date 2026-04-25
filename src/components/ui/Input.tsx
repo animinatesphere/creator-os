@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useId } from "react";
 import { cn } from "@/lib/utils";
 
 /* ============================================
@@ -34,7 +34,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     },
     ref
   ) => {
-    const inputId = id ?? `input-${Math.random().toString(36).slice(2, 7)}`;
+    const reactId = useId();
+    const inputId = id ?? reactId;
 
     return (
       <div className={cn("flex flex-col gap-1.5", wrapperClassName)}>
@@ -118,7 +119,8 @@ export interface TextareaProps
 
 const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
   ({ className, label, error, hint, wrapperClassName, id, ...props }, ref) => {
-    const inputId = id ?? `textarea-${Math.random().toString(36).slice(2, 7)}`;
+    const reactId = useId();
+    const inputId = id ?? reactId;
 
     return (
       <div className={cn("flex flex-col gap-1.5", wrapperClassName)}>

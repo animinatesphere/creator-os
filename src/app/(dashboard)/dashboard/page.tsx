@@ -16,18 +16,19 @@ import {
   Zap,
   User,
   ArrowRight,
-  TrendingUp,
   Eye,
   MousePointer,
   DollarSign,
   Star,
   Clock,
   ChevronRight,
+  ClipboardList,
 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { SkeletonCard } from "@/components/ui/Skeleton";
 import { timeAgo } from "@/lib/utils";
+import { DashboardShell } from "@/components/layout/DashboardShell";
 
 /* ============================================
    TOOL CARD DATA
@@ -157,6 +158,15 @@ const tools: Tool[] = [
     badgeVariant: "primary",
     group: "Tools",
   },
+  {
+    id: "forms",
+    label: "Form Builder",
+    description: "Embeddable contact, survey, and lead capture forms.",
+    href: "/dashboard/forms",
+    icon: ClipboardList,
+    gradient: "from-blue-600 to-indigo-700",
+    group: "Tools",
+  },
 ];
 
 /* ============================================
@@ -248,7 +258,8 @@ export default function DashboardPage() {
   }, []);
 
   return (
-    <div className="max-w-[1400px] mx-auto space-y-8">
+    <DashboardShell title="Dashboard">
+      <div className="max-w-[1400px] mx-auto space-y-8">
       {/* ── Welcome Hero ── */}
       <WelcomeHero />
 
@@ -304,6 +315,7 @@ export default function DashboardPage() {
         </div>
       </section>
     </div>
+    </DashboardShell>
   );
 }
 

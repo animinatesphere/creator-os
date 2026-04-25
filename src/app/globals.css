@@ -5,9 +5,6 @@
    Premium Design Tokens & Animations
 ============================================ */
 
-/* === FONT IMPORTS === */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
-
 /* === CSS CUSTOM PROPERTIES (DESIGN TOKENS) === */
 :root {
   /* Brand Colors */
@@ -265,6 +262,31 @@ body {
 
 .animate-pulse-badge {
   animation: pulseBadge 2s infinite;
+}
+
+.animate-shine {
+  mask-image: linear-gradient(-75deg, rgba(0,0,0,0.6) 30%, #000 50%, rgba(0,0,0,0.6) 70%);
+  mask-size: 200%;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  from { mask-position: 150%; }
+  to { mask-position: -50%; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* === 3D UTILITIES === */
+.perspective-1000 {
+  perspective: 1000px;
 }
 
 /* ============================================
