@@ -40,9 +40,7 @@ export default function LoginPage() {
         <div className="rounded-[32px] border border-white/5 bg-white/[0.02] backdrop-blur-2xl p-8 md:p-10 shadow-2xl">
           <div className="text-center space-y-2 mb-10">
             <Link href="/" className="inline-flex items-center gap-2 mb-6 group transition-all hover:scale-105 active:scale-95">
-              <div className="w-10 h-10 rounded-[12px] bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center shadow-lg shadow-indigo-500/20">
-                <span className="text-white text-base font-black">C</span>
-              </div>
+              <img src="/logo.png" alt="CreatorOS Logo" className="w-10 h-10 object-contain" />
             </Link>
             <h1 className="text-2xl font-black text-white tracking-tight">Welcome back.</h1>
             <p className="text-gray-400 text-sm">Enter your details to access your creator tools.</p>

@@ -113,9 +113,7 @@ export function Sidebar() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--clr-primary)]/5 to-transparent pointer-events-none" />
         
-        <div className="w-10 h-10 rounded-[12px] bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center flex-shrink-0 shadow-lg shadow-indigo-500/20 z-10">
-          <span className="text-white text-base font-black">C</span>
-        </div>
+        <img src="/logo.png" alt="CreatorOS Logo" className="w-10 h-10 object-contain z-10" />
         
         {!sidebarCollapsed && (
           <motion.div 

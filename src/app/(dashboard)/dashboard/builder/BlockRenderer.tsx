@@ -84,7 +84,7 @@ export function BlockRenderer({ block, globalFont, viewMode }: { block: BlockDat
        return (
          <nav className={cn("w-full px-10 py-5 flex items-center justify-between z-50", p.sticky === "true" && "sticky top-0 backdrop-blur-md")} style={{ ...commonStyle, paddingTop: "1.25rem", paddingBottom: "1.25rem", background: bStyle?.background || "rgba(255,255,255,0.9)", borderBottom: "1px solid rgba(0,0,0,0.05)" }}>
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-black text-sm">C</div>
+              <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
               <span className="font-black tracking-tight text-gray-900">{String(p.logo)}</span>
             </div>
             <div className="hidden md:flex items-center gap-8">{navLinks.map((link, i) => (<a key={i} href={link.href} className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">{link.label}</a>))}</div>

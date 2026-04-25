@@ -21,9 +21,7 @@ export default function MarketingLandingPage() {
       <nav className="fixed top-0 inset-x-0 z-50 bg-[#060608]/80 backdrop-blur-xl border-b border-white/5 px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-[10px] bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center shadow-lg shadow-indigo-500/20">
-              <span className="text-white text-base font-black">C</span>
-            </div>
+            <img src="/logo.png" alt="CreatorOS Logo" className="w-9 h-9 object-contain" />
             <span className="font-bold text-xl tracking-tight">Creator<span className="text-indigo-400">OS</span></span>
           </div>
           

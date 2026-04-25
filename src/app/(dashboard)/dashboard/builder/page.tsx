@@ -164,11 +164,8 @@ export default function LandingPageBuilderPage() {
       {/* ── Figma Floating Header ── */}
       <header className="h-12 flex items-center justify-between px-2 bg-[#2c2c2c] border-b border-black/20 z-[100] shrink-0">
         <div className="flex items-center gap-1">
-          <Link href="/dashboard" className="p-2 hover:bg-white/5 rounded-md text-indigo-500">
-             <div className="w-5 h-5 flex flex-col gap-0.5">
-                <div className="flex gap-0.5"><div className="w-2 h-2 rounded-full bg-red-500" /><div className="w-2 h-2 rounded-full bg-blue-500" /></div>
-                <div className="flex gap-0.5"><div className="w-2 h-2 rounded-full bg-purple-500" /><div className="w-2 h-2 rounded-full bg-green-500" /></div>
-             </div>
+          <Link href="/dashboard" className="p-1 hover:bg-white/5 rounded-md transition-colors overflow-hidden">
+             <img src="/logo.png" alt="CreatorOS Logo" className="w-8 h-8 object-contain" />
           </Link>
           
           <div className="h-4 w-px bg-white/10 mx-1" />

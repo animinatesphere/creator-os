@@ -40,9 +40,7 @@ export default function SignupPage() {
         <div className="rounded-[32px] border border-white/5 bg-white/[0.02] backdrop-blur-2xl p-8 md:p-10 shadow-2xl">
           <div className="text-center space-y-2 mb-10">
             <Link href="/" className="inline-flex items-center gap-2 mb-6 group transition-all hover:scale-105 active:scale-95">
-              <div className="w-10 h-10 rounded-[12px] bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center shadow-lg shadow-indigo-500/20">
-                <span className="text-white text-base font-black">C</span>
-              </div>
+              <img src="/logo.png" alt="CreatorOS Logo" className="w-10 h-10 object-contain" />
             </Link>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-[10px] font-bold uppercase tracking-wider mb-2">
               <Sparkles size={10} /> Limited access

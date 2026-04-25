@@ -108,8 +108,8 @@ export const BLOCK_LIBRARY: BlockDefinition[] = [
     icon: ImageIcon,
     category: "media",
     defaultProps: {
-      src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=2564",
-      alt: "Abstract Design",
+      src: "/preview.png",
+      alt: "CreatorOS Preview",
       width: "100%",
       caption: "Creative expression in the digital age",
     },
